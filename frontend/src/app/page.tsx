@@ -1,5 +1,9 @@
-import Image from "next/image";
+import { HeroSection } from "@/sections/HeroSection";
 
 export default function Home() {
-  return <>Welcome to my next js app</>;
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  );
 }

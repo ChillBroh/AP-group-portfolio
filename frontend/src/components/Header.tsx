@@ -1,37 +1,128 @@
-import { Button } from "antd";
+"use client";
+import { useState } from "react";
+import { Button, Drawer } from "antd";
+import { FiMenu } from "react-icons/fi";
+import { AiOutlineClose } from "react-icons/ai";
+
 export default function Header() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
   return (
     <header className="bg-white text-secondary-base p-4">
-      <div className="container px-5 mx-auto flex justify-between items-center ">
-        <h1 className="text-lg font-bold">Company Name</h1>
-        <div className="flex flex-row items-center gap-2">
+      <div className="container flex justify-between items-center">
+        <h1 className="text-2xl font-bold">PA Group株式会社</h1>
+        {/* Desktop Navigation */}
+        <div className="hidden cmd:flex flex-row items-center gap-6">
           <nav className="uppercase">
             <ul className="flex space-x-4">
               <li>
-                <a href="/" className="hover:underline">
+                <a
+                  href="/"
+                  className="hover:text-primary-base hover:underline underline-offset-8"
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="/about" className="hover:underline">
+                <a
+                  href="/about"
+                  className="hover:text-primary-base hover:underline underline-offset-8"
+                >
                   About us
                 </a>
               </li>
               <li>
-                <a href="/services" className="hover:underline">
+                <a
+                  href="/services"
+                  className="hover:text-primary-base hover:underline underline-offset-8"
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:underline">
+                <a
+                  href="/contact"
+                  className="hover:text-primary-base hover:underline underline-offset-8"
+                >
                   Contact us
                 </a>
               </li>
             </ul>
           </nav>
-          <Button type="primary">Primary Button</Button>
+          <Button
+            className="bg-gradient-to-r from-primary-base to-primary-base1"
+            type="primary"
+          >
+            Send a Mail
+          </Button>
+        </div>
+        {/* Mobile Hamburger Menu */}
+        <div className="flex cmd:hidden items-center">
+          <FiMenu className="text-2xl cursor-pointer" onClick={toggleDrawer} />
         </div>
       </div>
+
+      {/* Mobile Drawer */}
+      <Drawer
+        title="Menu"
+        placement="right"
+        onClose={toggleDrawer}
+        open={isDrawerOpen}
+        closeIcon={<AiOutlineClose className="text-xl" />}
+      >
+        <div className="p-4">
+          <ul className="flex flex-col space-y-4 uppercase">
+            <li>
+              <a
+                href="/"
+                className="hover:text-primary-base hover:underline underline-offset-8"
+                onClick={toggleDrawer}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/about"
+                className="hover:text-primary-base hover:underline underline-offset-8"
+                onClick={toggleDrawer}
+              >
+                About us
+              </a>
+            </li>
+            <li>
+              <a
+                href="/services"
+                className="hover:text-primary-base hover:underline underline-offset-8"
+                onClick={toggleDrawer}
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contact"
+                className="hover:text-primary-base hover:underline underline-offset-8"
+                onClick={toggleDrawer}
+              >
+                Contact us
+              </a>
+            </li>
+            <li>
+              <Button
+                className="bg-gradient-to-r from-primary-base to-primary-base1"
+                type="primary"
+              >
+                Send a Mail
+              </Button>
+            </li>
+          </ul>
+        </div>
+      </Drawer>
     </header>
   );
 }

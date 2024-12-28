@@ -8,11 +8,18 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "480px", // Extra small devices
+        sm: "640px", // Small devices
+        cmd: "910px", // Medium devices
+        lg: "1024px", // Large devices
+        xl: "1280px", // Extra large devices
+      },
       colors: {
         primary: {
           light: "var(--color-primary-light)",
           base: "var(--color-primary-base)",
-          base2: "var(--color-primary-base2)",
+          base1: "var(--color-primary-base2)",
         },
         secondary: {
           light: "var(--color-secondary-light)",
