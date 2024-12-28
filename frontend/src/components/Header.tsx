@@ -12,16 +12,16 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white text-secondary-base p-4">
-      <div className="container flex justify-between items-center">
-        <h1 className="text-2xl font-bold">PA Group株式会社</h1>
+    <header className="bg-white text-secondary-base py-4">
+      <div className="container mx-auto flex  justify-between items-center">
+        <h1 className="text-2xl pl-4 font-bold ">🇱🇰 PA Group株式会社 🇯🇵</h1>
         {/* Desktop Navigation */}
         <div className="hidden cmd:flex flex-row items-center gap-6">
           <nav className="uppercase">
             <ul className="flex space-x-4">
               <li>
                 <a
-                  href="/"
+                  href="#heroSection"
                   className="hover:text-primary-base hover:underline underline-offset-8"
                 >
                   Home
@@ -29,7 +29,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="/about"
+                  href="#aboutUsSection"
                   className="hover:text-primary-base hover:underline underline-offset-8"
                 >
                   About us
@@ -37,10 +37,10 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="/services"
+                  href="#restaurentSection"
                   className="hover:text-primary-base hover:underline underline-offset-8"
                 >
-                  Services
+                  Restaurent
                 </a>
               </li>
               <li>
@@ -61,7 +61,7 @@ export default function Header() {
           </Button>
         </div>
         {/* Mobile Hamburger Menu */}
-        <div className="flex cmd:hidden items-center">
+        <div className="flex cmd:hidden pr-4 items-center">
           <FiMenu className="text-2xl cursor-pointer" onClick={toggleDrawer} />
         </div>
       </div>
