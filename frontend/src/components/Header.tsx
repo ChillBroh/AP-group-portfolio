@@ -45,7 +45,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="/contact"
+                  href="#contactUsSection"
                   className="hover:text-primary-base hover:underline underline-offset-8"
                 >
                   Contact us
@@ -78,7 +78,7 @@ export default function Header() {
           <ul className="flex flex-col space-y-4 uppercase">
             <li>
               <a
-                href="/"
+                href="#heroSection"
                 className="hover:text-primary-base hover:underline underline-offset-8"
                 onClick={toggleDrawer}
               >
@@ -87,7 +87,7 @@ export default function Header() {
             </li>
             <li>
               <a
-                href="/about"
+                href="#aboutUsSection"
                 className="hover:text-primary-base hover:underline underline-offset-8"
                 onClick={toggleDrawer}
               >
@@ -96,16 +96,16 @@ export default function Header() {
             </li>
             <li>
               <a
-                href="/services"
+                href="#restaurentSection"
                 className="hover:text-primary-base hover:underline underline-offset-8"
                 onClick={toggleDrawer}
               >
-                Services
+                Restaurent
               </a>
             </li>
             <li>
               <a
-                href="/contact"
+                href="#contactUsSection"
                 className="hover:text-primary-base hover:underline underline-offset-8"
                 onClick={toggleDrawer}
               >

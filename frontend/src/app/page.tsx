@@ -1,6 +1,9 @@
 "use client";
+import Footer from "@/components/Footer";
 import AboutUsSection from "@/sections/AboutUsSection";
+import ContactUsSection from "@/sections/ContactUsSection";
 import HeroSection from "@/sections/HeroSection";
+import MobileSection from "@/sections/MobileSection";
 import RestaurentSection from "@/sections/RestaurentSection";
 import { FloatButton } from "antd";
 import { FaAngleDoubleUp } from "react-icons/fa";
@@ -23,6 +26,9 @@ export default function Home() {
         tooltip={<div>Scroll to Top</div>}
         onClick={scrollToTop}
       />
+      <MobileSection />
+      <ContactUsSection />
+      <Footer />
     </div>
   );
 }
