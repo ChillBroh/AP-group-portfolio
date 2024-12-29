@@ -13,7 +13,7 @@ export default {
         xs: "480px", // Extra small devices
         sm: "640px", // Small devices
         cmd: "910px", // Medium devices
-        lg: "1024px", // Large devices
+        lg: "1025px", // Large devices
         xl: "1280px", // Extra large devices
       },
       colors: {

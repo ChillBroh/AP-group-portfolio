@@ -1,34 +1,125 @@
+import aboutUs1 from "../../public/images/aboutus-1.jpg";
+import aboutUs2 from "../../public/images/aboutus-2.jpg";
+import aboutUs3 from "../../public/images/aboutus-3.jpg";
+import ceo from "../../public/images/ceo.png";
+import Image from "next/image";
 const AboutUsSection = () => {
   return (
     <div
-      className="mt-28 px-4 sm:px-8 md:px-16 lg:px-24 w-full"
-      id="aboutUsSectio"
+      className="mt-36 px-8 sm:px-8 md:px-16 lg:px-36 w-full"
+      id="aboutUsSection"
     >
-      <div className="text-5xl font-bold text-center">About Us</div>
-      <div className="mt-10">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum est, eum
-        obcaecati non perspiciatis commodi praesentium, quisquam repellat
-        exercitationem deserunt optio delectus iure, sapiente laudantium quidem
-        cumque. Repudiandae obcaecati atque laudantium. Quidem ullam asperiores
-        rem eos tempora, sit autem possimus atque cum temporibus, illum vel
-        aspernatur aperiam sunt. Vitae ullam quos suscipit laborum adipisci odio
-        aut? Quia reiciendis, repellat ullam accusantium sequi voluptatibus
-        temporibus a incidunt quam sunt eaque iure necessitatibus ab iste, sed
-        qui aperiam, neque molestiae ratione obcaecati exercitationem ipsum? Ad
-        assumenda dolores, iste molestiae possimus quaerat eius obcaecati
-        architecto at voluptas, tempore similique repudiandae dignissimos,
-        consequatur laborum quia deserunt placeat. Perspiciatis, accusamus.
-        Expedita nostrum minima ipsam sapiente totam dolorem soluta obcaecati
-        distinctio similique quod temporibus deserunt dolor, velit, laudantium,
-        perspiciatis illum consequatur. Fuga deserunt rem, omnis explicabo
-        maxime in culpa quidem, at iusto magni inventore quasi sint? Ratione
-        modi odio voluptatibus provident temporibus distinctio non cupiditate
-        minus inventore deleniti fugiat eum natus error repudiandae autem
-        tempora libero ut quia, quaerat obcaecati sapiente, sint ipsum? Maxime
-        consequuntur quibusdam perspiciatis quos in voluptatem at praesentium,
-        dicta error dolor odit perferendis aliquam tenetur, voluptatum dolores
-        labore omnis non architecto asperiores nostrum illo numquam dolorem
-        nihil. Ipsam eum omnis vitae qui?
+      <div className="text-5xl font-bold text-center pb-5 md:pb-10">
+        Who We Are
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div className="relative w-full h-80 bg-gray-200">
+          <Image
+            src={aboutUs1}
+            alt="hero icon"
+            className="w-full h-full object-cover rounded-lg shadow-md"
+          />
+        </div>
+        <div className="relative w-full h-80 bg-gray-200">
+          <Image
+            src={aboutUs2}
+            alt="hero icon"
+            className="w-full h-full object-cover rounded-lg shadow-md"
+          />
+        </div>
+        <div className="relative w-full h-80 bg-gray-200">
+          <Image
+            src={aboutUs3}
+            alt="hero icon"
+            className="w-full h-full object-cover rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+      <div className="text-justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+        explicabo quos ea ab corrupti, eos aperiam reprehenderit beatae sunt
+        molestiae vero rerum animi, eaque architecto quas deleniti error.
+        Aliquid a deserunt eum fuga quisquam placeat incidunt facere quis
+        tempora porro aspernatur veritatis nihil ab, dolor perferendis soluta
+        temporibus suscipit, non repellat aliquam quo possimus! Nisi assumenda
+        id, soluta esse inventore sapiente ipsum illo numquam rem aspernatur
+        molestias, facere ipsam! Amet dolore optio vel, soluta ut saepe
+        laboriosam, ad eaque, odio quis repellat esse maxime! Aut odio dolor
+        illum incidunt perspiciatis esse optio et, aspernatur at nihil. Magnam
+        nobis repudiandae amet.
+      </div>
+      <div className="mt-10 grid grid-cols-1 cmd:grid-cols-2 gap-8">
+        {/* Left Column: Details */}
+        <div>
+          <p className="text-3xl font-semibold mb-8">Our Personal Details</p>
+          <ul className="list-disc pl-6 space-y-8">
+            <li>
+              <strong>Date of Establishment:</strong> April 30, 2023
+            </li>
+            <li>
+              <strong>Representative:</strong> Chanuka Nowod
+            </li>
+            <li>
+              <strong>Address:</strong> 4294-12 Iwai, Bando City, Ibaraki
+              Prefecture, Japan
+            </li>
+            <li>
+              <strong>Business Details:</strong>
+              <ul className="list-disc pl-6 mt-5 space-y-2">
+                <li>Restaurant operation business</li>
+                <li>Mail order agency business</li>
+                <li>Foreigner support business</li>
+                <li>Contract business</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Life Support for Foreigners:</strong>
+              <ul className="list-disc pl-6 mt-5 space-y-2">
+                <li>Vocational training and Japanese language acquisition</li>
+                <li>Cross-cultural exchange through cooking</li>
+              </ul>
+            </li>
+          </ul>
+          <div className="mt-10">
+            <p className="text-3xl font-semibold mb-8">Our Global Reach</p>
+            <p className="mb-10 text-justify">
+              At PA Group Co. Ltd. we strive to create a bridge between cultures
+              and provide essential support for foreigners in Japan. With our
+              roots in Sri Lanka, we have expanded to Japan to serve diverse
+              communities with:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 mt-4">
+              <li>Japanese school and restaurant management in Sri Lanka</li>
+              <li>Operating PA International Group globally</li>
+              <li>Supporting life and career opportunities for foreigners</li>
+            </ul>
+          </div>
+
+          <div className="mt-10">
+            <p className="text-3xl font-semibold mb-8">
+              Our Vision and Mission
+            </p>
+            <p className="mb-6 text-justify">
+              <strong>Our Vision:</strong> To foster a global community where
+              cultural exchange and support enable individuals to thrive,
+              bridging the gap between diverse cultures.
+            </p>
+            <p className="mb-6 text-justify">
+              <strong>Our Mission:</strong> To provide comprehensive support
+              services for foreigners, empowering them through vocational
+              training, language acquisition, and opportunities for meaningful
+              cross-cultural connections.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <Image
+            src={ceo}
+            alt="hero icon"
+            className="w-full h-full object-cover rounded-lg shadow-md"
+          />
+        </div>
       </div>
     </div>
   );

@@ -7,6 +7,9 @@ import {
   FaMobileAlt,
   FaLanguage,
   FaShippingFast,
+  FaUserFriends,
+  FaRegHandshake,
+  FaAward,
 } from "react-icons/fa";
 import Image from "next/image";
 import CountUp from "react-countup";
@@ -19,20 +22,32 @@ const HeroSection = () => {
       className="relative h-auto px-4 sm:px-8 md:px-16 lg:px-24 w-full bg-primary-light"
     >
       {/* Floating Counting Div */}
-      <div className="absolute w-3/4 h-20 -bottom-12 left-1/2 transform -translate-x-1/2 z-10 flex items-center justify-between gap-6 px-6 py-4 bg-white shadow-lg rounded-lg">
-        <div className="text-2xl font-bold">
-          <CountUp start={0} end={100} duration={2.5} />+
+      <div className="absolute w-2/4 h-auto md:-bottom-20 hidden bottom-1 left-1/2 transform -translate-x-1/2 z-10  md:flex flex-wrap items-center justify-between gap-6 px-6 py-4 bg-white shadow-lg rounded-lg">
+        <div className="flex flex-col items-center gap-2">
+          <FaUserFriends className="text-primary-base" size={32} />
+          <div className="text-2xl font-bold">
+            <CountUp start={0} end={100} duration={2.5} />+
+          </div>
+          <div className="text-sm">Happy Clients</div>
         </div>
-        <div className="text-2xl font-bold">
-          <CountUp start={0} end={200} duration={2.5} />+
+        <div className="flex flex-col items-center gap-2">
+          <FaRegHandshake className="text-primary-base" size={32} />
+          <div className="text-2xl font-bold">
+            <CountUp start={0} end={200} duration={2.5} />+
+          </div>
+          <div className="text-sm">Partnerships</div>
         </div>
-        <div className="text-2xl font-bold">
-          <CountUp start={0} end={300} duration={2.5} />+
+        <div className="flex flex-col items-center gap-2">
+          <FaAward className="text-primary-base" size={32} />
+          <div className="text-2xl font-bold">
+            <CountUp start={0} end={300} duration={2.5} />+
+          </div>
+          <div className="text-sm">Awards Won</div>
         </div>
       </div>
 
       {/* Main Content Section */}
-      <div className="flex flex-col md:flex-row p-6 md:p-20">
+      <div className="flex flex-col lg:flex-row p-6 md:p-20">
         {/* Left Column: Icon list */}
         <div className="flex flex-col gap-4 mr-0 md:mr-20 mb-8 md:mb-0">
           <div className="flex items-center gap-2 animate-fade-right animate-once animate-ease-linear animate-duration-400">
