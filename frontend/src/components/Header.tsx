@@ -40,7 +40,15 @@ export default function Header() {
                   href="#restaurentSection"
                   className="hover:text-primary-base hover:underline underline-offset-8"
                 >
-                  Restaurent
+                  Restaurant
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#mobileSection"
+                  className="hover:text-primary-base hover:underline underline-offset-8"
+                >
+                  Mobile Section
                 </a>
               </li>
               <li>
@@ -100,7 +108,16 @@ export default function Header() {
                 className="hover:text-primary-base hover:underline underline-offset-8"
                 onClick={toggleDrawer}
               >
-                Restaurent
+                Restaurant
+              </a>
+            </li>
+            <li>
+              <a
+                href="#mobileSection"
+                className="hover:text-primary-base hover:underline underline-offset-8"
+                onClick={toggleDrawer}
+              >
+                Mobile Section
               </a>
             </li>
             <li>
@@ -112,6 +129,7 @@ export default function Header() {
                 Contact us
               </a>
             </li>
+
             <li>
               <Button
                 className="bg-gradient-to-r from-primary-base to-primary-base1"

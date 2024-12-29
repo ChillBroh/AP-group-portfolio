@@ -5,6 +5,19 @@ const RestaurentSection = () => {
       id="restaurentSection"
     >
       <div className="text-5xl font-bold text-center">Culinary Experience</div>
+      <div className="grid grid-cols-4">
+        <div className="col-span-2">1</div>
+        <div className="col-span-2">
+          <div className="grid grid-cols-2">
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <div className="grid grid-cols-2">
+            <div>4</div>
+            <div>5</div>
+          </div>
+        </div>
+      </div>
       <div className="mt-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam
         quisquam quas aspernatur, quo optio illo nulla officia cupiditate beatae
@@ -26,20 +39,6 @@ const RestaurentSection = () => {
         provident debitis quisquam perspiciatis omnis voluptatem voluptas
         nesciunt repudiandae in laboriosam deserunt. Quam possimus nihil nisi
         quas repellendus, quae tempore dolore quibusdam in sunt, aperiam
-        doloremque consequuntur. Perspiciatis nihil, fugiat ut ea harum saepe ab
-        voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Omnis quibusdam quisquam quas aspernatur, quo optio illo nulla officia
-        cupiditate beatae nobis eos fuga repudiandae, aut, eum ea voluptates
-        laborum libero incidunt maiores dolorum nihil vero porro. Debitis
-        provident accusamus vitae dicta libero odio aut nulla sapiente ipsa
-        repudiandae atque quas, quam possimus dolores voluptatum voluptatibus
-        illum iusto deserunt fuga autem. Suscipit aperiam provident quod tempore
-        recusandae repellat quasi sit nobis unde ut quis voluptatibus laborum a,
-        ab qui minima maiores ex officiis animi eius? Alias ut, fugiat soluta
-        recusandae tenetur sapiente reprehenderit voluptatum similique corporis
-        qui quis ratione minima quas! Temporibus asperiores adipisci numquam
-        ipsam optio autem sequi voluptatibus id reiciendis porro nesciunt
-        recusandae maiores ipsum illum quas rerum obcaecati doloribus impedit,
       </div>
     </div>
   );
