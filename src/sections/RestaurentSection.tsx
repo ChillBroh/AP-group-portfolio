@@ -18,12 +18,14 @@ const CulinaryExperienceSection = () => {
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) observer.disconnect();
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
 
@@ -36,7 +38,11 @@ const CulinaryExperienceSection = () => {
       <div className="text-5xl font-bold text-center mb-10">
         Culinary Experience
       </div>
-      <div className="grid md:grid-cols-3 gap-4">
+      <div
+        className={`grid md:grid-cols-3 gap-4 ${
+          animate ? "animate-fade-right  " : "animate-fade-left "
+        } `}
+      >
         {/* Left Section */}
         <div className="md:col-span-1 col-span-2">
           <Image

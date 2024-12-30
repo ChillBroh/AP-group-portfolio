@@ -88,7 +88,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="flex pt-8 md:pt-20 flex-col w-full md:w-[500px] animate-fade-down animate-duration-[2600ms] animate-delay-500 mr-0 md:mr-20 mb-8 md:mb-0">
+        <div className="flex pt-8 md:pt-8 flex-col w-full md:w-[500px] animate-fade-down animate-duration-[2600ms] animate-delay-500 mr-0 md:mr-20 mb-8 md:mb-0">
           <div className="text-3xl font-bold pb-4 uppercase">
             Create an environment where foreigners can work comfortably
           </div>
