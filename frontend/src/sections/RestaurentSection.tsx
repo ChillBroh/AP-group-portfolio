@@ -1,47 +1,111 @@
-const RestaurentSection = () => {
+"use client";
+import Image from "next/image";
+import restaurant1 from "../../public/images/restaurant/restaurant-1.png";
+import restaurant2 from "../../public/images/restaurant/restaurant-2.png";
+import { useEffect, useRef, useState } from "react";
+
+const CulinaryExperienceSection = () => {
+  const [animate, setAnimate] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setAnimate(entry.isIntersecting);
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) observer.disconnect();
+    };
+  }, []);
+
   return (
     <div
-      className="mt-28  px-4 sm:px-8 md:px-16 lg:px-36 w-full"
-      id="restaurentSection"
+      className="mt-28 px-4 sm:px-8 md:px-16 lg:px-36 w-full"
+      id="culinaryExperienceSection"
+      ref={sectionRef}
     >
-      <div className="text-5xl font-bold text-center">Culinary Experience</div>
-      <div className="grid grid-cols-4">
-        <div className="col-span-2">1</div>
-        <div className="col-span-2">
-          <div className="grid grid-cols-2">
-            <div>2</div>
-            <div>3</div>
-          </div>
-          <div className="grid grid-cols-2">
-            <div>4</div>
-            <div>5</div>
-          </div>
+      <div className="text-5xl font-bold text-center mb-10">
+        Culinary Experience
+      </div>
+      <div className="grid md:grid-cols-3 gap-4">
+        {/* Left Section */}
+        <div className="md:col-span-1 col-span-2">
+          <Image
+            src={restaurant1}
+            alt="Restaurant Image 1"
+            className="w-full h-full object-cover rounded-xl shadow-md"
+          />
+        </div>
+
+        {/* Right Section */}
+        <div className="col-span-2 grid grid-cols-2 gap-4">
+          <Image
+            src={restaurant2}
+            alt="Restaurant Image 2"
+            className="w-full h-full object-cover rounded-xl shadow-md"
+          />
+          <Image
+            src={restaurant2}
+            alt="Restaurant Image 3"
+            className="w-full h-full object-cover rounded-xl shadow-md"
+          />
+          <Image
+            src={restaurant2}
+            alt="Restaurant Image 4"
+            className="w-full h-full object-cover rounded-xl shadow-md"
+          />
+          <Image
+            src={restaurant2}
+            alt="Restaurant Image 5"
+            className="w-full h-full object-cover rounded-xl shadow-md"
+          />
         </div>
       </div>
-      <div className="mt-10">
+
+      {/* Description Section */}
+      <div className="mt-10 text-justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam
         quisquam quas aspernatur, quo optio illo nulla officia cupiditate beatae
         nobis eos fuga repudiandae, aut, eum ea voluptates laborum libero
-        incidunt maiores dolorum nihil vero porro. Debitis provident accusamus
-        vitae dicta libero odio aut nulla sapiente ipsa repudiandae atque quas,
-        quam possimus dolores voluptatum voluptatibus illum iusto deserunt fuga
-        autem. Suscipit aperiam provident quod tempore recusandae repellat quasi
-        sit nobis unde ut quis voluptatibus laborum a, ab qui minima maiores ex
-        officiis animi eius? Alias ut, fugiat soluta recusandae tenetur sapiente
-        reprehenderit voluptatum similique corporis qui quis ratione minima
-        quas! Temporibus asperiores adipisci numquam ipsam optio autem sequi
-        voluptatibus id reiciendis porro nesciunt recusandae maiores ipsum illum
-        quas rerum obcaecati doloribus impedit, odit sed quia modi quam
-        voluptates. Sequi, repellendus, temporibus culpa ad commodi saepe ipsa
-        quos harum odit quasi possimus qui distinctio tenetur adipisci a,
-        expedita aspernatur odio sit. Nisi, maxime! Inventore impedit officia
-        ipsa quod dolorem voluptatibus maiores, reiciendis quidem minus unde
-        provident debitis quisquam perspiciatis omnis voluptatem voluptas
-        nesciunt repudiandae in laboriosam deserunt. Quam possimus nihil nisi
-        quas repellendus, quae tempore dolore quibusdam in sunt, aperiam
+        incidunt maiores dolorum nihil vero porro... Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Omnis quibusdam quisquam quas aspernatur,
+        quo optio illo nulla officia cupiditate beatae nobis eos fuga
+        repudiandae, aut, eum ea voluptates laborum libero incidunt maiores
+        dolorum nihil vero porro... Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Omnis quibusdam quisquam quas aspernatur, quo optio
+        illo nulla officia cupiditate beatae nobis eos fuga repudiandae, aut,
+        eum ea voluptates laborum libero incidunt maiores dolorum nihil vero
+        porro... Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+        quibusdam quisquam quas aspernatur, quo optio illo nulla officia
+        cupiditate beatae nobis eos fuga repudiandae, aut, eum ea voluptates
+        laborum libero incidunt maiores dolorum nihil vero porro...Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Omnis quibusdam quisquam
+        quas aspernatur, quo optio illo nulla officia cupiditate beatae nobis
+        eos fuga repudiandae, aut, eum ea voluptates laborum libero incidunt
+        maiores dolorum nihil vero porro... Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Omnis quibusdam quisquam quas aspernatur,
+        quo optio illo nulla officia cupiditate beatae nobis eos fuga
+        repudiandae, aut, eum ea voluptates laborum libero incidunt maiores
+        dolorum nihil vero porro... Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Omnis quibusdam quisquam quas aspernatur, quo optio
+        illo nulla officia cupiditate beatae nobis eos fuga repudiandae, aut,
+        eum ea voluptates laborum libero incidunt maiores dolorum nihil vero
+        porro... Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+        quibusdam quisquam quas aspernatur, quo optio illo nulla officia
+        cupiditate beatae nobis eos fuga repudiandae, aut, eum ea voluptates
+        laborum libero incidunt maiores dolorum nihil vero porro...
       </div>
     </div>
   );
 };
 
-export default RestaurentSection;
+export default CulinaryExperienceSection;
