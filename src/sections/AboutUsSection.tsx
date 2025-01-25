@@ -74,17 +74,16 @@ const AboutUsSection = () => {
             : "animate-fade-down"
         } `}
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
-        explicabo quos ea ab corrupti, eos aperiam reprehenderit beatae sunt
-        molestiae vero rerum animi, eaque architecto quas deleniti error.
-        Aliquid a deserunt eum fuga quisquam placeat incidunt facere quis
-        tempora porro aspernatur veritatis nihil ab, dolor perferendis soluta
-        temporibus suscipit, non repellat aliquam quo possimus! Nisi assumenda
-        id, soluta esse inventore sapiente ipsum illo numquam rem aspernatur
-        molestias, facere ipsam! Amet dolore optio vel, soluta ut saepe
-        laboriosam, ad eaque, odio quis repellat esse maxime! Aut odio dolor
-        illum incidunt perspiciatis esse optio et, aspernatur at nihil. Magnam
-        nobis repudiandae amet.
+        Our company operates as a dynamic chain, dedicated to delivering
+        exceptional services to both the local and international populations of
+        Japan. With a commitment to excellence, we cater to a diverse clientele,
+        ensuring their unique needs and expectations are met with precision. Our
+        extensive network allows us to offer a wide range of solutions, tailored
+        to enhance the experience of those residing in or visiting Japan. By
+        combining cultural understanding with innovative practices, we strive to
+        bridge the gap between global and local perspectives, fostering
+        meaningful connections and providing unparalleled value in every aspect
+        of our services.
       </div>
       <div className="mt-10 grid grid-cols-1 cmd:grid-cols-2 gap-8">
         {/* Left Column: Details */}
@@ -142,15 +141,15 @@ const AboutUsSection = () => {
                 Our Vision and Mission
               </p>
               <p className="mb-6 text-justify">
-                <strong>Our Vision:</strong> To foster a global community where
-                cultural exchange and support enable individuals to thrive,
-                bridging the gap between diverse cultures.
+                <strong>Our Vision:</strong> We believe in the power of
+                collaboration and hard work. Together, we strive to make a
+                positive impact in the world.
               </p>
               <p className="mb-6 text-justify">
-                <strong>Our Mission:</strong> To provide comprehensive support
-                services for foreigners, empowering them through vocational
-                training, language acquisition, and opportunities for meaningful
-                cross-cultural connections.
+                <strong>Our Mission:</strong> Our mission is to provide the
+                highest quality service and to provide communicative and
+                responsive services to clients so as to provide a sense of
+                trust.
               </p>
             </div>
           </div>

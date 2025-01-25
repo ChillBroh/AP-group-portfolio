@@ -1,7 +1,12 @@
 "use client";
 import Image from "next/image";
-import restaurant1 from "../../public/images/restaurant/restaurant-1.png";
-import restaurant2 from "../../public/images/restaurant/restaurant-2.png";
+import restaurant1 from "../../public/images/restaurant/restaurant-1.jpg";
+import restaurant7 from "../../public/images/restaurant/restaurant-7.jpg";
+import restaurant3 from "../../public/images/restaurant/restaurant-3.jpg";
+import restaurant4 from "../../public/images/restaurant/restaurant-4.jpg";
+import restaurant5 from "../../public/images/restaurant/restaurant-5.jpg";
+import restaurant8 from "../../public/images/restaurant/restaurant-6.jpg";
+
 import { useEffect, useRef, useState } from "react";
 
 const CulinaryExperienceSection = () => {
@@ -40,14 +45,14 @@ const CulinaryExperienceSection = () => {
       </div>
       <div
         className={`grid md:grid-cols-3 gap-4 ${
-          animate ? "animate-fade-right  " : "animate-fade-left "
+          animate ? "animate-fade-right" : "animate-fade-left"
         } `}
       >
         {/* Left Section */}
         <div className="md:col-span-1 col-span-2">
           <Image
             src={restaurant1}
-            alt="Restaurant Image 1"
+            alt="Sri Lankan Restaurant Interior"
             className="w-full h-full object-cover rounded-xl shadow-md"
           />
         </div>
@@ -55,60 +60,54 @@ const CulinaryExperienceSection = () => {
         {/* Right Section */}
         <div className="col-span-2 grid grid-cols-2 gap-4">
           <Image
-            src={restaurant2}
-            alt="Restaurant Image 2"
+            src={restaurant4}
+            alt="Sri Lankan Dish 1"
             className="w-full h-full object-cover rounded-xl shadow-md"
           />
           <Image
-            src={restaurant2}
-            alt="Restaurant Image 3"
+            src={restaurant3}
+            alt="Sri Lankan Dish 2"
             className="w-full h-full object-cover rounded-xl shadow-md"
           />
           <Image
-            src={restaurant2}
-            alt="Restaurant Image 4"
+            src={restaurant8}
+            alt="Sri Lankan Dish 3"
             className="w-full h-full object-cover rounded-xl shadow-md"
           />
           <Image
-            src={restaurant2}
-            alt="Restaurant Image 5"
+            src={restaurant5}
+            alt="Sri Lankan Dish 4"
             className="w-full h-full object-cover rounded-xl shadow-md"
           />
         </div>
       </div>
 
       {/* Description Section */}
-      <div className="mt-10 text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam
-        quisquam quas aspernatur, quo optio illo nulla officia cupiditate beatae
-        nobis eos fuga repudiandae, aut, eum ea voluptates laborum libero
-        incidunt maiores dolorum nihil vero porro... Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Omnis quibusdam quisquam quas aspernatur,
-        quo optio illo nulla officia cupiditate beatae nobis eos fuga
-        repudiandae, aut, eum ea voluptates laborum libero incidunt maiores
-        dolorum nihil vero porro... Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Omnis quibusdam quisquam quas aspernatur, quo optio
-        illo nulla officia cupiditate beatae nobis eos fuga repudiandae, aut,
-        eum ea voluptates laborum libero incidunt maiores dolorum nihil vero
-        porro... Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-        quibusdam quisquam quas aspernatur, quo optio illo nulla officia
-        cupiditate beatae nobis eos fuga repudiandae, aut, eum ea voluptates
-        laborum libero incidunt maiores dolorum nihil vero porro...Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Omnis quibusdam quisquam
-        quas aspernatur, quo optio illo nulla officia cupiditate beatae nobis
-        eos fuga repudiandae, aut, eum ea voluptates laborum libero incidunt
-        maiores dolorum nihil vero porro... Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Omnis quibusdam quisquam quas aspernatur,
-        quo optio illo nulla officia cupiditate beatae nobis eos fuga
-        repudiandae, aut, eum ea voluptates laborum libero incidunt maiores
-        dolorum nihil vero porro... Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Omnis quibusdam quisquam quas aspernatur, quo optio
-        illo nulla officia cupiditate beatae nobis eos fuga repudiandae, aut,
-        eum ea voluptates laborum libero incidunt maiores dolorum nihil vero
-        porro... Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-        quibusdam quisquam quas aspernatur, quo optio illo nulla officia
-        cupiditate beatae nobis eos fuga repudiandae, aut, eum ea voluptates
-        laborum libero incidunt maiores dolorum nihil vero porro...
+      <div className="mt-10 text-justify text-sm sm:text-base">
+        <p className="mb-4">
+          <strong>The SHACHO' Restaurant & Bar</strong> is a Sri Lankan
+          restaurant located in Ibaraki Ken Bando, Japan. We take pride in
+          showcasing the rich culinary heritage of Sri Lanka, a country renowned
+          for its world-famous Ceylon spices.
+        </p>
+        <p className="mb-4">
+          At The SHACHO, we blend authentic Sri Lankan spices to create an array
+          of flavorful dishes. Our mission is to provide high-quality food with
+          an unmatched taste, ensuring a delightful dining experience for every
+          customer.
+        </p>
+        <p className="mb-4">
+          Designed with an exquisite Sri Lankan ambiance, our restaurant stands
+          out as a unique destination in Japan. Whether you are celebrating a
+          festival, hosting a special occasion, or throwing a birthday party,
+          The SHACHO offers the perfect setting. It is also an ideal venue for
+          enjoying games with friends.
+        </p>
+        <p>
+          As part of our restaurant chain, our kitchen car brings the
+          distinctive flavors of Sri Lanka to various locations, making it
+          easier for everyone to experience our culinary excellence.
+        </p>
       </div>
     </div>
   );
