@@ -44,7 +44,7 @@ const MobileSection = () => {
       </div>
       <div
         className={`grid md:grid-cols-3 gap-4 grid-cols-1 ${
-          animate ? "animate-fade-right" : "animate-fade-left"
+          animate ? "animate-fade-right" : ""
         } `}
       >
         {/* Left Section */}

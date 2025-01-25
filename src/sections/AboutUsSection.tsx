@@ -42,7 +42,7 @@ const AboutUsSection = () => {
       </div>
       <div
         className={`grid grid-cols-1 cmd:grid-cols-3 gap-6 mb-10 ${
-          animate ? "animate-fade-right  " : "animate-fade-left "
+          animate ? "animate-fade-right  " : ""
         } `}
       >
         <div className="relative w-full h-80 bg-gray-200">
@@ -69,9 +69,7 @@ const AboutUsSection = () => {
       </div>
       <div
         className={`text-justify ${
-          animate
-            ? "animate-fade-up animate-delay-[500ms]"
-            : "animate-fade-down"
+          animate ? "animate-fade-up animate-delay-[500ms]" : ""
         } `}
       >
         Our company operates as a dynamic chain, dedicated to delivering
@@ -87,11 +85,7 @@ const AboutUsSection = () => {
       </div>
       <div className="mt-10 grid grid-cols-1 cmd:grid-cols-2 gap-8">
         {/* Left Column: Details */}
-        <div
-          className={`${
-            animate ? "animate-fade-right  " : "animate-fade-left"
-          } `}
-        >
+        <div className={`${animate ? "animate-fade-right  " : ""} `}>
           <p className="text-3xl font-semibold mb-8">Our Personal Details</p>
           <ul className="list-disc pl-6 space-y-8">
             <li>

@@ -45,7 +45,7 @@ const ContactUsSection = () => {
       <div className="text-5xl font-bold text-center mb-10">Get In Touch</div>
       <div
         className={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center ${
-          animate ? "animate-fade-right" : "animate-fade-left"
+          animate ? "animate-fade-right" : ""
         }`}
       >
         {/* Contact Form */}
