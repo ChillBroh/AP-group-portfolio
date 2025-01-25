@@ -36,14 +36,14 @@ const CulinaryExperienceSection = () => {
   return (
     <div
       className="mt-28 px-4 sm:px-8 md:px-16 lg:px-36 w-full"
-      id="culinaryExperienceSection"
+      id="#restaurentSection"
       ref={sectionRef}
     >
       <div className="text-5xl font-bold text-center mb-10">
         Culinary Experience
       </div>
       <div
-        className={`grid md:grid-cols-3 gap-4 ${
+        className={`grid md:grid-cols-3 gap-4 grid-cols-1 ${
           animate ? "animate-fade-right" : "animate-fade-left"
         } `}
       >
@@ -57,26 +57,26 @@ const CulinaryExperienceSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="col-span-2 grid grid-cols-2 gap-4">
+        <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
           <Image
             src={restaurant4}
             alt="Sri Lankan Dish 1"
-            className="w-full h-full object-cover rounded-xl shadow-md"
+            className="md:w-full md:h-full h-auto object-cover rounded-xl shadow-md"
           />
           <Image
             src={restaurant3}
             alt="Sri Lankan Dish 2"
-            className="w-full h-full object-cover rounded-xl shadow-md"
+            className="md:w-full md:h-full h-auto object-cover rounded-xl shadow-md"
           />
           <Image
             src={restaurant8}
             alt="Sri Lankan Dish 3"
-            className="w-full h-full object-cover rounded-xl shadow-md"
+            className="md:w-full md:h-full h-auto object-cover rounded-xl shadow-md"
           />
           <Image
             src={restaurant5}
             alt="Sri Lankan Dish 4"
-            className="w-full h-full object-cover rounded-xl shadow-md"
+            className="md:w-full md:h-full h-auto object-cover rounded-xl shadow-md"
           />
         </div>
       </div>

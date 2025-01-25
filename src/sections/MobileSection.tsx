@@ -43,7 +43,7 @@ const MobileSection = () => {
         Mobile Services
       </div>
       <div
-        className={`grid md:grid-cols-3 gap-4 ${
+        className={`grid md:grid-cols-3 gap-4 grid-cols-1 ${
           animate ? "animate-fade-right" : "animate-fade-left"
         } `}
       >
@@ -57,26 +57,26 @@ const MobileSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="col-span-2 grid grid-cols-2 gap-4">
+        <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
           <Image
             src={mobile2}
             alt="SIM and WIFI Campaign"
-            className="w-full h-full object-cover rounded-xl shadow-md"
+            className="md:w-full md:h-full h-auto object-cover rounded-xl shadow-md"
           />
           <Image
             src={mobile3}
             alt="Mobile and Credit Card Promotion"
-            className="w-full h-full object-cover rounded-xl shadow-md"
+            className="md:w-full md:h-full h-auto object-cover rounded-xl shadow-md"
           />
           <Image
             src={mobile4}
             alt="Customer Support Services"
-            className="w-full h-full object-cover rounded-xl shadow-md"
+            className="md:w-full md:h-full h-auto object-cover rounded-xl shadow-md"
           />
           <Image
             src={mobile5}
             alt="Customer Support Services"
-            className="w-full h-full object-cover rounded-xl shadow-md"
+            className="md:w-full md:h-full h-auto object-cover rounded-xl shadow-md"
           />
         </div>
       </div>
