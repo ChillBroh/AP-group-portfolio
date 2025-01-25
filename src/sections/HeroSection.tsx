@@ -93,17 +93,8 @@ const HeroSection = () => {
             Create an environment where foreigners can work comfortably
           </div>
           <div className="pb-4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-            ipsum ratione tenetur harum quas voluptatum, repellendus veritatis
-            aliquam repudiandae earum dolore dicta fuga perspiciatis
-          </div>
-          <div>
-            <Button
-              className="bg-gradient-to-r from-primary-base to-primary-base1"
-              type="primary"
-            >
-              Get Started
-            </Button>
+            We are a chain of companies that provides services to the local and
+            foreign populations of Japan.
           </div>
         </div>
         <div className=" w-full md:w-[500px] animate-fade-left animate-duration-[2600ms] animate-delay-500">

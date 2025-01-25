@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Button, Drawer } from "antd";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
+import logo from "../../public/images/logo.png";
+import Image from "next/image";
 
 export default function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -14,7 +16,9 @@ export default function Header() {
   return (
     <header className="bg-white text-secondary-base py-4">
       <div className="container mx-auto flex  justify-between items-center">
-        <h1 className="text-2xl pl-4 font-bold ">🇱🇰 PA Group株式会社 🇯🇵</h1>
+        <p className=" pl-4">
+          <Image src={logo} alt="logo" width={70} height={70} />
+        </p>
         {/* Desktop Navigation */}
         <div className="hidden cmd:flex flex-row items-center gap-6">
           <nav className="uppercase">
