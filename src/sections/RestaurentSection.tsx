@@ -84,7 +84,7 @@ const CulinaryExperienceSection = () => {
       {/* Description Section */}
       <div className="mt-10 text-justify text-sm sm:text-base">
         <p className="mb-4">
-          <strong>The SHACHO' Restaurant & Bar</strong> is a Sri Lankan
+          <strong>The SHACHO&#39; Restaurant & Bar</strong> is a Sri Lankan
           restaurant located in Ibaraki Ken Bando, Japan. We take pride in
           showcasing the rich culinary heritage of Sri Lanka, a country renowned
           for its world-famous Ceylon spices.
