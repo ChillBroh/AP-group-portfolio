@@ -36,7 +36,7 @@ const CulinaryExperienceSection = () => {
   return (
     <div
       className="mt-28 px-4 sm:px-8 md:px-16 lg:px-36 w-full"
-      id="#restaurentSection"
+      id="restaurentSection"
       ref={sectionRef}
     >
       <div className="text-5xl font-bold text-center mb-10">
