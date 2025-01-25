@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import restaurant1 from "../../public/images/restaurant/restaurant-1.jpg";
-import restaurant7 from "../../public/images/restaurant/restaurant-7.jpg";
 import restaurant3 from "../../public/images/restaurant/restaurant-3.jpg";
 import restaurant4 from "../../public/images/restaurant/restaurant-4.jpg";
 import restaurant5 from "../../public/images/restaurant/restaurant-5.jpg";
