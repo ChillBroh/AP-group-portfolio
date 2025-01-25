@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import aboutUs1 from "../../public/images/aboutus-1.jpg";
-import aboutUs2 from "../../public/images/aboutus-2.jpg";
-import aboutUs3 from "../../public/images/aboutus-3.jpg";
+import restaurant6 from "../../public/images/restaurant/restaurant-6.jpg";
+import restaurant7 from "../../public/images/restaurant/restaurant-7.jpg";
+import restaurant9 from "../../public/images/restaurant/restaurant-9.jpg";
 import ceo from "../../public/images/ceo.png";
 import Image from "next/image";
 
@@ -47,21 +47,21 @@ const AboutUsSection = () => {
       >
         <div className="relative w-full h-80 bg-gray-200">
           <Image
-            src={aboutUs1}
+            src={restaurant6}
             alt="hero icon"
             className="w-full h-full object-cover rounded-lg shadow-md"
           />
         </div>
         <div className="relative w-full h-80 bg-gray-200">
           <Image
-            src={aboutUs2}
+            src={restaurant7}
             alt="hero icon"
             className="w-full h-full object-cover rounded-lg shadow-md"
           />
         </div>
         <div className="relative w-full h-80 bg-gray-200">
           <Image
-            src={aboutUs3}
+            src={restaurant9}
             alt="hero icon"
             className="w-full h-full object-cover rounded-lg shadow-md"
           />
