@@ -101,6 +101,28 @@ const MobileSection = () => {
           facilities easily accessible to our customers.
         </p>
       </div>
+
+      {/* Other Services Section */}
+      <div className="mt-16 px-4 sm:px-8 md:px-16 lg:px-36">
+        <div className="text-4xl font-bold text-center mb-8" id="otherServices">
+          Other Services
+        </div>
+        <ul className="space-y-4 text-xl sm:text-base">
+          <li>
+            <strong>P A Group Visa Consulting:</strong> We provide consulting
+            service to realize the dream of Japan.
+          </li>
+          <li>
+            <strong>Language Translation:</strong> We provide language
+            translation support for those who are currently living in Japan and
+            those who are new to Japan.
+          </li>
+          <li>
+            <strong>Import and Export:</strong> We import and export products
+            from Japan to Sri Lanka and also from Sri Lanka to Japan.
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

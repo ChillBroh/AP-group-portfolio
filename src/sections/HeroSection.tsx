@@ -59,7 +59,7 @@ const HeroSection = () => {
             <span>Restaurant Chain</span>
           </a>
           <a
-            href="#paGroupConsulting"
+            href="#otherServices"
             className="flex items-center  hover:text-lg gap-2 animate-fade-right animate-once animate-ease-linear animate-duration-400 animate-delay-500"
           >
             <div className="p-4 bg-white rounded-full shadow-md">
@@ -86,7 +86,7 @@ const HeroSection = () => {
             <span>Mobile Credit and Connection Campaign</span>
           </a>
           <a
-            href="#languageTranslation"
+            href="#otherServices"
             className="flex items-center  hover:text-lg gap-2 animate-fade-right animate-once animate-ease-linear animate-duration-400 animate-delay-[2000ms]"
           >
             <div className="p-4 bg-white rounded-full shadow-md">
@@ -95,7 +95,7 @@ const HeroSection = () => {
             <span>Language Translation</span>
           </a>
           <a
-            href="#importExport"
+            href="#otherServices"
             className="flex items-center  hover:text-lg gap-2 animate-fade-right animate-once animate-ease-linear animate-duration-400 animate-delay-[2500ms]"
           >
             <div className="p-4 bg-white rounded-full shadow-md">

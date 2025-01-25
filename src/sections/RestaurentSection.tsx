@@ -40,7 +40,7 @@ const CulinaryExperienceSection = () => {
       ref={sectionRef}
     >
       <div className="text-5xl font-bold text-center mb-10">
-        Culinary Experience
+        Restaurent Chain
       </div>
       <div
         className={`grid md:grid-cols-3 gap-4 grid-cols-1 ${
