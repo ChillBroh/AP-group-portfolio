@@ -33,7 +33,7 @@ const AboutUsSection = () => {
 
   return (
     <div
-      className="mt-36 px-8 sm:px-8 md:px-16 lg:px-36 w-full"
+      className="mt-10 px-8 sm:px-8 md:px-16 lg:px-36 w-full"
       id="aboutUsSection"
       ref={sectionRef}
     >
