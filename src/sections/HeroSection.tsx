@@ -11,7 +11,7 @@ import {
   // FaAward,
 } from "react-icons/fa";
 import Image from "next/image";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 import HeroIcon from "../../public/images/heroIcon.png";
 
 const HeroSection = () => {
