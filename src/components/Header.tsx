@@ -68,7 +68,12 @@ export default function Header() {
           <Button
             className="bg-gradient-to-r from-primary-base to-primary-base1"
             type="primary"
-            onClick={() => (window.location.href = "mailto:ishara@gmail.com")}
+            onClick={() =>
+              window.open(
+                "mailto:ishara@gmail.com?subject=Want to know more about business!",
+                "_self"
+              )
+            }
           >
             Send a Mail
           </Button>
@@ -140,7 +145,10 @@ export default function Header() {
                 className="bg-gradient-to-r from-primary-base to-primary-base1"
                 type="primary"
                 onClick={() =>
-                  (window.location.href = "mailto:ishara@gmail.com")
+                  window.open(
+                    "mailto:testuser@gmail.com?subject=Want to know more about business!",
+                    "_self"
+                  )
                 }
               >
                 Send a Mail
