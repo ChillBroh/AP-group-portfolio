@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Button, Form, Input, Select } from "antd";
+import { Form, Select } from "antd";
 const { Option } = Select;
-
-const onFinish = () => {};
 
 const ContactUsSection = () => {
   const [animate, setAnimate] = useState(false);
@@ -28,14 +26,14 @@ const ContactUsSection = () => {
       if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
-  const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
-      <Select style={{ width: 70 }}>
-        <Option value="86">+86</Option>
-        <Option value="87">+87</Option>
-      </Select>
-    </Form.Item>
-  );
+  // const prefixSelector = (
+  //   <Form.Item name="prefix" noStyle>
+  //     <Select style={{ width: 70 }}>
+  //       <Option value="86">+86</Option>
+  //       <Option value="87">+87</Option>
+  //     </Select>
+  //   </Form.Item>
+  // );
   return (
     // <div
     //   className="mt-10 px-4 sm:px-8 md:px-16 lg:px-36 w-full"
