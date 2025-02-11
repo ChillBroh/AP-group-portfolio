@@ -68,6 +68,7 @@ export default function Header() {
           <Button
             className="bg-gradient-to-r from-primary-base to-primary-base1"
             type="primary"
+            onClick={() => (window.location.href = "mailto:ishara@gmail.com")}
           >
             Send a Mail
           </Button>
@@ -138,6 +139,9 @@ export default function Header() {
               <Button
                 className="bg-gradient-to-r from-primary-base to-primary-base1"
                 type="primary"
+                onClick={() =>
+                  (window.location.href = "mailto:ishara@gmail.com")
+                }
               >
                 Send a Mail
               </Button>
