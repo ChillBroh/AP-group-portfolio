@@ -119,7 +119,7 @@ const AboutUsSection = () => {
             <div className="mt-10">
               <p className="text-3xl font-semibold mb-8">Our Global Reach</p>
               <p className="mb-10 text-justify">
-                At PA Group Co. Ltd. we strive to create a bridge between
+                At P.A Group Co. Ltd. we strive to create a bridge between
                 cultures and provide essential support for foreigners in Japan.
                 With our roots in Sri Lanka, we have expanded to Japan to serve
                 diverse communities with:

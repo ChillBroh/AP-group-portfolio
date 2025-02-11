@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PA Group",
-  description: "PA Group Portfolio",
+  title: "P.A Group",
+  description: "P.A Group Portfolio",
 };
 
 export default function RootLayout({

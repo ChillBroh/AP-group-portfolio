@@ -65,7 +65,7 @@ const HeroSection = () => {
             <div className="p-4 bg-white rounded-full shadow-md">
               <FaGlobe className="text-primary-base" size={24} />
             </div>
-            <span>PA Group Consulting</span>
+            <span>P.A Group Consulting</span>
           </a>
           <a
             href="#mobileSection"
