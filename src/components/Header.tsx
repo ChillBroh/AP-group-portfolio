@@ -70,7 +70,7 @@ export default function Header() {
             type="primary"
             onClick={() =>
               window.open(
-                "mailto:ishara@gmail.com?subject=Want to know more about business!",
+                "mailto:pagroup7773@gmail.com?subject=Want to know more about business!",
                 "_self"
               )
             }
@@ -146,7 +146,7 @@ export default function Header() {
                 type="primary"
                 onClick={() =>
                   window.open(
-                    "mailto:testuser@gmail.com?subject=Want to know more about business!",
+                    "mailto:pagroup7773@gmail.com?subject=Want to know more about business!",
                     "_self"
                   )
                 }
